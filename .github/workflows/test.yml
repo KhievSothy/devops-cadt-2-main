@@ -9,8 +9,3 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
-    steps:
-      - name: Clone Repo
-      run: git clone https://github.com/KhievSothy/devops-cadt-2-main.git
-      - name: List folders
-      run: ls
