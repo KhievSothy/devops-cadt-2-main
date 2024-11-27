@@ -3,14 +3,14 @@ name: Test API
 # When it's trigger
 on:
   push:
-    branches: main
+    branches: master
   pull_request:
-    branches: main
+    branches: master
 jobs:
   test:
     runs-on: ubuntu-22.04
     steps:
       - name: Clone Repo
-      run: git clone git@github.com:KhievSothy/devops-cadt-2-main.git
-      - name List folders
+      run: git clone https://github.com/KhievSothy/devops-cadt-2-main.git
+      - name: List Folders
       run: ls
