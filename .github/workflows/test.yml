@@ -1,6 +1,4 @@
-# .github/workflows/test.yml
-name: Test API
-# When it's trigger
+name: Run Test
 on:
   push:
     branches: main
@@ -9,3 +7,14 @@ on:
 jobs:
   test:
     runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm install
+      - name: Run Test
+        run: npm run test
