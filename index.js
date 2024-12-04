@@ -1,5 +1,5 @@
 const app = require('./app.js');
 
-app.listen(8000, () => {
-    console.log("Running on 8000")
+app.listen(7777, () => {
+    console.log("Running on 7777")
 })
