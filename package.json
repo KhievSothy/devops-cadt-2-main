@@ -1,7 +1,7 @@
 {
   "name": "devops-cadt-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Install and run the server ```sh npm install npm run dev ``` ## Run test ```sh npm run test ```",
   "main": "index.js",
   "scripts": {
     "test": "jest",
