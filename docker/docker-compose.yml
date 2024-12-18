@@ -1,0 +1,9 @@
+services:
+  ubuntu-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-server
+    ports:
+      - "2233:22"
+    network_mode: bridge
